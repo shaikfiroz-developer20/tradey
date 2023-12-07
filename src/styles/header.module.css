@@ -1,0 +1,133 @@
+.nav{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+background-color: transparent;}
+
+
+ 
+.navul{
+    display: flex;
+    width: 95%;
+    margin-bottom:2px ;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(61, 61, 61);
+    border-radius: 8px;
+
+}
+
+.sectionsset{
+    z-index: 0;
+    position: relative;}
+
+
+.lisiitems{
+    max-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+
+}
+
+.listinputmiddleininput{
+width: 50%;
+}
+
+.listinputmiddleininputin{
+
+    width: 100%;
+    border-width: 0;
+    outline: 1px solid grey;
+    border-radius: 5px;
+    height: 20px;
+    padding: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
+
+.navigationbarsitema{
+  color: rgb(20, 0, 0);
+    cursor: pointer;
+    margin-bottom: 50vh;
+}
+
+.navigationbarsitema:hover{
+    color: #0818A8;
+}
+
+.bittonsignuplogin{
+    background-color: #0818A8;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 17px;
+    margin-right: 20px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    width: fit-content;
+    cursor: pointer;
+}
+.bittonsignuplogin:hover{
+    background-color: rgb(0, 136, 255);
+}
+
+
+.nav::-webkit-scrollbar{
+    width: 0;
+  }
+
+  .navulinul{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 10px;
+    list-style-type: none;
+  }
+
+  .navulinulli{
+    cursor: pointer;
+
+  }
+
+  .section1,.section2,.section3,.section4{
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 0;
+  }
+
+  .section2{
+    background-color: rgb(30, 120, 66);
+
+  }
+
+  .section3{
+    background-color: rgb(61, 83, 222);
+
+  }
+  .section4{
+    background-color: rgb(234, 255, 0);
+
+  }
+  
+
+  @media only screen and (min-width: 600px) {
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 12vh;  
+      z-index: 100;
+  
+    }
+  }

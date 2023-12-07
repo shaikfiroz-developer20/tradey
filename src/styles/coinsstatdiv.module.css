@@ -1,0 +1,52 @@
+
+.headerCurrencyPairTypesDiv {
+    width: 90%;
+    margin-top: 5vh;
+    display: flex;
+    margin-left: 5%;
+    height: 7vh;
+    background-color: #eaeaea;
+}
+
+.headerCurrencyPairTypesDiv1 {
+    width: 100%;
+    display: flex;
+    min-height: 8vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(249, 249, 249);
+}
+
+/* Styles for the list in HeaderCurrencyPairTypesInfo and HeaderCurrencyPairDetails */
+.headerList {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.headerlistli{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+
+/* Styles for the percent element */
+.percent {
+    height: fit-content;
+    padding: 5px;
+    background-color: rgb(161, 255, 187);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styles for the trade buttons */
+.tradeButtons {
+    display: grid;
+    gap: 5px;
+}

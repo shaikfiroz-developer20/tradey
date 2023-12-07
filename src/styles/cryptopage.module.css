@@ -1,0 +1,269 @@
+/* cryptopage.module.css */
+.cryptopage {
+    width: 100%;
+    min-height: 94vh;
+    display: flex;
+    color: white;
+    background-color: #0f1527;
+  }
+  
+  .sidenavbarwithrelatedcrypropairsdata {
+    width: 20vw;
+    background-color: rgb(13, 13, 13);
+    height: 94vh;
+    display: grid;
+  }
+  
+  .tadebusellandorderbookouterdiv {
+    width: 80vw;
+  }
+  .tadebusellandorderbookouterdivmobile{
+    width: 100%;
+  }
+  
+  .tradecandles {
+    min-width: 57vw;
+    margin-top: 2vh;
+    height: 83vh;
+    background-color: #000000;
+  }
+  
+  .customhomefooter{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    align-items: center;
+    background-color: #000000;
+  }
+  .customhomefooterul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .charandorderbook {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+  }
+  .charandorderbookmobile{
+    display: grid;
+    width: 100%;
+  }
+  
+  .sidenavorderbook {
+    width: 20vw;
+    height: 94vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(13, 13, 13);
+  }
+
+  .sidenavorderbookmobile{
+    width: 100%;
+    background-color: rgb(58, 36, 10);
+height: 100vh;
+  }
+.searchedresultquerycrypto{
+    display: flex;
+    width: 100%;
+    background-color: #0f1527;
+    height: 8vh;
+    align-items: center;
+    justify-content: center;
+}
+.searchcryptopairs{
+    width: 90%;
+    margin-left: 5%;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 5px;
+    background-color: #21242d;
+    color: white;
+    border-color: #15181e;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-width: 0px;
+}
+.searchcryptopairs:focus{
+    outline: 2px solid rgb(57, 57, 57);
+}
+
+.allcryptopairsavailable{
+    height: 74vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    overflow: scroll;
+    margin-left: 5%;
+    scroll-behavior: smooth;
+    background-color: #0f1012;
+}
+
+.allcryptopairsavailable::-webkit-scrollbar{
+  width: 0;
+  
+}
+
+.navinout{
+    display: flex;
+    width: 20vw;
+    background-color: #0f1527;
+    height: 8vh;
+}
+.navinul{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: 30px;
+list-style-type: none;
+color: white;
+}
+
+.orderbidshigh{
+    width: 100%;
+    height: 35vh;
+    background-color: rgb(24, 16, 24);
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 3px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    align-items: center;
+
+}
+.orderbidslow{
+    width: 100%;
+   max-height: 35vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 3px;
+   overflow: scroll;
+   scroll-behavior: smooth;
+   background-color: rgb(28, 20, 28);
+
+}
+.middledcurrentpriceorderbookdata{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    background-color: green;
+}
+
+.buysellbuttonsdivs{
+    width: 100%;
+    display: flex;
+   min-height:  14vh;
+   max-height: auto;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.coinsuldataontradechart{
+  width: 100%;
+  display: flex;
+  list-style-type: none;
+  color: #646e8c;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Impact sans-serif;
+font-size: 15px;
+font-weight: 600;}
+
+.coinsuldataontradechart li{
+  cursor: pointer;
+}
+.settingchartandtimframe{
+  width: 100%;
+  height: 7%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgb(24, 24, 20);
+
+}
+
+.candlestickschartdiv{
+  height: 87%;
+  display: flex;
+  flex-direction: column;
+  justify-content:center ;
+  align-items:center ;
+}
+.settingchartandtimframeul{
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.charttimeframetime{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  list-style-type: none;
+  align-items: center;
+}
+
+.cryptopaircard{
+
+  width: 18vw;
+  height: 10vh;
+  background-color: #0e0000;
+  
+}
+.coinnamesandprices{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price{
+font-size: 14px;
+width: fit-content;
+}
+
+.cryptopairsnames{
+  display: flex;
+  color: gray;
+  gap: 3px;
+}
+.busellbuttontradingpairs{
+  height: auto;
+}
+
+.bidorders,.Askorders{
+  display: flex;
+  width: 100%;
+  height: 25px;
+  justify-content: space-around;
+  align-items: center;
+font-size: 17px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.bidorders{
+  background-color: #13151c;
+  color: rgb(174, 46, 46);
+
+
+}
+
+.Askorders{
+  background-color: #13151c;
+  color: rgb(49, 107, 49);
+}

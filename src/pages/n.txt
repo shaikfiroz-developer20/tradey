@@ -1,0 +1,25 @@
+(
+        <div>
+          <div className={styles.charandorderbookmobile}>
+            <div className={styles.tadebusellandorderbookouterdivmobile}>
+              <div style={{ height: '6vh', backgroundColor: '#060634' }}></div>
+              <div className={styles.tradecandlesmobile}>
+                Candlesticks
+                <div className="buysell">Buy/Sell</div>
+              </div>
+              <div className="orderbook">Order Book</div>
+            </div>
+            <div className={styles.sidenavorderbookmobile}>
+              {cryptocurrency}
+            </div>
+          </div>
+          <footer className={`${styles.customhomefooter}`}>
+            <ul className={`${styles.customhomefooterul}`}>
+              <li><img src='/homemobile.svg' height={50} width={50} alt="" /></li>
+              <li><img src='/market.svg' height={50} width={50} alt="" /></li>
+              <li><img src='/funds.svg' height={50} width={50} alt="" /></li>
+              <li><img src='/profile.svg' height={50} width={50} alt="" /></li>
+            </ul>
+          </footer>
+        </div>
+      )

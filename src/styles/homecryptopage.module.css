@@ -1,0 +1,131 @@
+.selectingoption{
+    width: 100%;
+    display: flex;
+    height: 5vh;
+    justify-content: center;
+    background-color: #363738;
+    align-items: center;
+}
+.selectingoptionul{
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-style: oblique;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+.chartdatamobileviesouterdiv{
+    width: 100%;
+    height: 89vh;
+}
+
+
+.tradecandles {
+    
+   
+  }
+  .settingchartandtimframe{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgb(24, 24, 20);
+  
+  }
+  .charttimeframetime{
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    list-style-type: none;
+    color: white;
+    align-items: center;
+  }
+  .candlestickschartdiv{
+    height: 84vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items:center ;
+    background-color: rgb(0, 0, 0);
+  }
+  
+
+  .settingchartandtimframeul1{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+    gap: 10px;
+  }
+
+  .settingchartandtimframeul2{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .sidenavorderbook {
+    width: 100vw;
+    height: 84vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(13, 13, 13);
+  }
+
+  .navinout{
+    display: flex;
+    width: 100vw;
+    background-color: #0f1527;
+    height: 8vh;
+}
+
+.navinul{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  align-items: center;
+  gap: 30px;
+list-style-type: none;
+color: white;
+}
+
+.buysellbuttonsdivs{
+  width: 100vw;
+  display: flex;
+ min-height:  14vh;
+ max-height: auto;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+.sidenavbarwithrelatedcrypropairsdata {
+  width: 100%;
+  background-color: rgb(13, 13, 13);
+  height: 84vh;
+  display: grid;
+}
+
+.cryptopaircard{
+  width: 80vw;
+  height: 25vh;
+  background-color: #0e0000;
+  justify-content: flex-start;
+  align-items: center;
+  
+}

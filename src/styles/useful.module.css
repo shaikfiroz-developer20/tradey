@@ -1,0 +1,67 @@
+.trasactionbuysellcard{
+
+    width: 100%;
+    height: 30vh;
+position: relative;
+bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(6, 18, 18);
+    gap: 20px;
+
+}
+
+.walletbalance{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sectioninputandbalance{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.lablebuttonsradio{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.quantityinput{
+    border-radius: 5px;
+    border-width: 0;
+    height: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgb(35, 35, 35);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+}
+.quantityinput:focus{
+
+    outline: none;
+
+}
+.quantityinputbutton{
+    color: white;
+    height: 23px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 30px;
+    border: none;
+    font: 700;
+}
+
+.inputquant{
+    border: 0.7px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

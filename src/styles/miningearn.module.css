@@ -1,0 +1,157 @@
+.infodivouter{
+    width: 90%;
+    display: flex;
+    margin-top: 30px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+font-size: 17px;
+gap: 20px;
+padding-left: 5%;
+
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dedails{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+
+
+}
+.sectioninfodivoutersec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.infomainpointsul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+    gap: 25px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+
+.card{
+    width: 300px;
+    height: 250px;
+   display: block;
+   box-shadow: 0 0 1px 0 black;
+  
+}
+.poolsinfoouterdivsection{
+    
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+margin-top: 10vh;
+z-index: 0;
+margin-bottom:10vh;
+}
+
+.poolsinfoouterdiv {
+    width: 86vw;
+    position: relative; 
+    display: grid;
+    height: 100vh;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    overflow: scroll;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    place-items: center;
+    overflow-x: hidden;
+    gap: 25px; /* Adjust the gap as needed */
+}
+
+.poolsinfoouterdiv::-webkit-scrollbar {
+    width: 13px;
+}
+
+
+/* Customize scrollbar track and handle for WebKit browsers */
+.poolsinfoouterdiv::-webkit-scrollbar-track {
+    background-color: #fefefe;
+}
+
+.poolsinfoouterdiv::-webkit-scrollbar-thumb {
+    background-color: #e2e2e2;
+    border-radius: 5px;
+}
+
+.detailedView {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Set a higher z-index value */
+}
+
+.infodivonselectedcard{
+    width: 90vw;
+    margin-top: 20px;
+    background-color: rgb(242, 241, 246);
+    height: 90vh;
+}
+
+.closingtab{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.infodata{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 20px;
+    gap: 20px;
+    overflow: scroll;
+}
+
+.displayabledata{
+    width: 80%;
+    display: grid;
+    min-width: 300px;
+    align-items: center;
+}
+
+.payoutpara{
+    display: block;
+    height: auto;
+    width: 60vw;
+    font-size: 16px;
+    color: blue;
+    height: auto;
+}
+
+
+@media only screen and (max-width:500px){
+
+.payoutpara{
+    font-size: 13px;
+}
+
+}

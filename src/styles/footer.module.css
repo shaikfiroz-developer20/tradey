@@ -1,0 +1,23 @@
+.footername{
+
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+place-items: center;
+width: 100vw;
+background-color: rgb(0, 0, 0);
+gap: 50px;
+height: auto;
+
+}
+
+.listItemStyle{
+width: 300px;
+background-color: rgb(7, 6, 6);
+list-style-type: none;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-size: 18px;
+
+}
