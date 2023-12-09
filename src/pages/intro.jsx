@@ -152,6 +152,9 @@ export default function Homem() {
   // State for tracking hovered image in the array
   const [hoveredImage, setHoveredImage] = useState(null);
 
+
+
+
   // Render
   return (
     <>

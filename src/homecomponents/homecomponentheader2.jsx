@@ -171,6 +171,7 @@ const handlemobilenavigationviewheader=()=>{
   </div>)}
 
       <ul className={`${styles.ullist2}`}>
+        <Link href="/intro" style={{color:"crimson"}}>About info</Link>
         <motion.img whileHover={{ cursor: "pointer" }} src={"/support.svg"} height={30} width={30} alt="" />
         <motion.img whileHover={{ cursor: "pointer" }} src={"/notification.svg"} height={30} width={30} alt="" />
        <Link href={isLoggedIn===false ? ('/login'):('/')}> <input className={`${styles11.bittonsignuplogin}`} style={{ backgroundColor: "brown" }} type="button" value={isLoggedIn?(userEmail):("Login")} /></Link>

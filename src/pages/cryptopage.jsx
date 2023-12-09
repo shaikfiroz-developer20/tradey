@@ -56,7 +56,7 @@ function Cryptopage() {
   const [selltrue, setsellrue] = useState(false);
   const [datfullloaded, setfulldataloaded] = useState(false);
   const [desktop, setisdesktop] = useState(null);
-  const [coinsexist,setcoinexist]=useState(null);
+  const [coinsexist,setcoinexist]=useState(false);
 
   useEffect(() => {
     const ordedata = async () => {
@@ -108,7 +108,7 @@ function Cryptopage() {
         const re = await axios.get(`${server}/reqcrypto?crypto=${CC}`);
         setinpresentsearchcoin(re.data);
         setPairsAvailableData(response.data);
-        if(re.data.Response==="Error"){
+        if(re.data===(null || undefined || "Error")){
           setcoinexist(false)
         }
         else{
@@ -165,7 +165,20 @@ const handecanelsell=()=>{
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="/y.png" />
   </Head>
+
     <div>
+    {datfullloaded && (coinsexist === false || coinsexist === undefined) && (
+  <div style={{width:"100%",height:"100vh",display:"flex",justifyContent:"center",alignItems:"center"}}>
+   <h3> The requested crypto doesnt exist</h3>
+  </div>
+)}
+
+
+
+
+
+
+
       {desktop && coinsexist && datfullloaded  && (<div>
           <Homecomponentheader2 />
           <div className={styles.cryptopage}>
@@ -265,7 +278,7 @@ const handecanelsell=()=>{
         wrapperClass="vortex-wrapper"
         colors={['brown','black']}
       /></div>)}
-      {coinsexist ===false && (<div style={{width:"100%",height:"100vh",display:"flex",justifyContent:"center",alignItems:"center"}}>The requested crypto dosent exist</div>)}
+
 
     </div>
     </>

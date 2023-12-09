@@ -2,13 +2,10 @@
   "name": "tradey",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://username.github.io/repo-name",
 
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "deploy": "npm run build && gh-pages -d out",
-    "predeploy": "npm run build",
     "start": "next start",
     "lint": "next lint"
   },
