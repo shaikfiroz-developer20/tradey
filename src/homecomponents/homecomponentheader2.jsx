@@ -59,7 +59,7 @@ const handlemobilenavigationviewheader=()=>{
 
   return (
     <nav className={`${styles.navbar2}`} style={prop.color && { backgroundColor: `${prop.color}` }}>
-      {isDesktop?(<ul className={`${styles.ullist}`}>
+      {isDesktop && (<ul className={`${styles.ullist}`}>
         <li
           className={`${styles.selectWrapper}`}
           onMouseEnter={() => handleMouseEnter("1")}
@@ -126,12 +126,16 @@ const handlemobilenavigationviewheader=()=>{
           )}
         </li>
       </ul>
-):(<div className={`${styles.ullist}`}>
+)}
+
+
+
+{ !isDesktop && (<div className={`${styles.ullist}`}>
 
   <img src="/hamburger.svg" onClick={handlemobilenavigationviewheader} height={30} width={30} alt="/hamburger.svg" />
   {isnavviewrequested && (<div className={styles.mobileciewnavigation}>
    <div style={{display:"flex",justifyContent:"flex-end",alignItems:"center"}}>  <img style={{marginTop:"5px",marginRight:"5px"}} src="/cancel2svg.svg" onClick={handlemobilenavigationviewheader} height={30} width={30} alt="/cancel2svg.svg" /></div>
-    <ul style={{marginTop:"40px"}} className={styles.mobileciewnavigationul}>
+    <ul style={{marginTop:"0px"}} className={styles.mobileciewnavigationul}>
       <h2><Link href="/">Trade</Link></h2>
                <Link href='/cryptopage?cryptocurrency=BTC'><motion.li  style={{width:"200px"}} whileHover={{scale:1.1,color:"red",fontSize:"25px",fontWeight:"bold"}}>Spot</motion.li></Link>
               <Link href='/cryptopage?cryptocurrency=BTC'><motion.li style={{width:"200px"}} whileHover={{scale:1.1,color:"red",fontSize:"25px",fontWeight:"bold"}}>Margin</motion.li></Link>
@@ -171,7 +175,6 @@ const handlemobilenavigationviewheader=()=>{
   </div>)}
 
       <ul className={`${styles.ullist2}`}>
-        <Link href="/intro" style={{color:"crimson"}}>About info</Link>
         <motion.img whileHover={{ cursor: "pointer" }} src={"/support.svg"} height={30} width={30} alt="" />
         <motion.img whileHover={{ cursor: "pointer" }} src={"/notification.svg"} height={30} width={30} alt="" />
        <Link href={isLoggedIn===false ? ('/login'):('/')}> <input className={`${styles11.bittonsignuplogin}`} style={{ backgroundColor: "brown" }} type="button" value={isLoggedIn?(userEmail):("Login")} /></Link>

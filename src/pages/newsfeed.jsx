@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import  {Vortex}  from "react-loader-spinner";
 import axios from "axios";
 import Head from 'next/head';
-
 const server=process.env.NEXT_PUBLIC_SERVER_URL;
 
 
@@ -69,7 +68,7 @@ function Newsfeed() {
   const newsdatahandlearrowfunc = async()=>{
     try {
       const res=await axios.get(`${server}/newsdatafeed`)
-      setnewsdata(res.data);
+      setnewsdata(res.data)
       setdataloaded(true);
     }
     catch (error) {

@@ -129,7 +129,7 @@ localStorage.setItem('userEmail', formData.email); // Store user's email
                 <label className={`${styles.inputlablessignuplogin}`} htmlFor="email">Email</label>
                 <input className={`${styles.inputboxessignuplogin}`} type="email" name="email" placeholder="email" id="email" required />
                 <label className={`${styles.inputlablessignuplogin}`} htmlFor="password">Password</label>
-                <input className={`${styles.inputboxessignuplogin}`} type="password" name="password" id="password" placeholder="Set Password" maxLength="18" pattern="^[A-Z].*$" />
+                <input className={`${styles.inputboxessignuplogin}`} type="password" name="password" id="password" placeholder="Set Password" maxLength="18" />
                 <input className={`${styles.buttonsignuplogin}`} id="signupbutton" type="submit" value="Signup" />
               </form>
               <div className="alreadyhaveaccount">
@@ -145,7 +145,7 @@ localStorage.setItem('userEmail', formData.email); // Store user's email
                 <label className={`${styles.inputlablessignuplogin}`} htmlFor="email">Email</label>
                 <input className={`${styles.inputboxessignuplogin}`} type="email" name="email" placeholder="email" id="email" required />
                 <label className={`${styles.inputlablessignuplogin}`} htmlFor="password">Password</label>
-                <input className={`${styles.inputboxessignuplogin}`} type="password" name="password" id="password" placeholder="Password" maxLength="18" pattern="^[A-Z].*$" />
+                <input className={`${styles.inputboxessignuplogin}`} type="password" name="password" id="password" placeholder="Password" maxLength="18" />
                 <input className={`${styles.buttonsignuplogin}`} id="loginbutton" type="submit" value="Login" />
               </form>
               <div className="alreadyhaveaccount">

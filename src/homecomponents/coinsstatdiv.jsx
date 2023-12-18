@@ -91,7 +91,7 @@ function CoinsStatDiv() {
     const handleInitialDataLoad = async (e) => {
       try {
         const res = await axios.get(`${server}/topcryptosprices?count=${e}`);
-        setData(res.data.data);
+        setData(res?.data?.data);
         setDataloaded(true);
       } catch (error) {
         console.log(error);

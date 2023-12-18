@@ -9,23 +9,6 @@ const inter = Inter({ subsets: ['latin'] })
 const Navheader = () => {
   const [isdesktop, setIsMobile] = useState(null);
 
-  const [logedin ,setIsLoggedIn]=useState(false);
-  const [useremail ,setUserEmail]=useState(null);
-
-
-  useEffect(() => {
-    const loggedIn = localStorage.getItem('isLoggedIn') === 'true';
-    const email = localStorage.getItem('userEmail');
-    const nemail = email?.split('@')[0]; // Split the email at '@' and get the first part (username)
-    
-    setIsLoggedIn(loggedIn);
-    setUserEmail(nemail);
-  }, []);
-  
-
-
-
-
   const handleResize = () => {
     if(window.innerWidth <= 768){
       setIsMobile(false);
@@ -103,13 +86,13 @@ const Navheader = () => {
 
           <li className={`${styles.lisiitems}`}>
             {/* Use motion.button for animations */}
-            <Link href= {logedin ? ("/"):("/login")}>
+            <Link href={`/login`}>
              <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 1.21 }}
               className={`${styles.bittonsignuplogin}`}
             >
-              {logedin ? (useremail):("Sign In")}
+              Login/Register
             </motion.button></Link>
            
           </li>

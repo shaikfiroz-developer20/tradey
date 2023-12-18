@@ -12,7 +12,6 @@ const server=process.env.NEXT_PUBLIC_SERVER_URL;
 function Card(props) {
   // Use destructuring to get the filter and data props
   const { filter, data } = props;
-
   // Use a switch statement to render different content based on the filter
   switch (filter) {
     case "topgainers":
@@ -22,12 +21,12 @@ function Card(props) {
  
  <div style={{display:"flex",justifyContent:"center",alignItems:"center",gap:"20px"}}>
   <div>
-<p>price:{data.DISPLAY.USD.PRICE}</p> 
-<p>volume:{data.DISPLAY.USD.TOPTIERVOLUME24HOURTO}</p>
+<p>price:{data?.DISPLAY?.USD?.PRICE || "N/A"}</p> 
+<p>volume:{data?.DISPLAY?.USD?.TOPTIERVOLUME24HOURTO || "N/A"}</p>
 </div>
 <div>
 <button style={{backgroundColor:"darkgreen",borderWidth:"0" ,borderRadius:"5px",padding:"5px",fontSize:"17px",color:"white"}}>
-    {data.DISPLAY.USD.CHANGEPCT24HOUR}
+    {data?.DISPLAY?.USD?.CHANGEPCT24HOUR || "N/A"}
   </button>
 </div>
 </div>
@@ -42,12 +41,12 @@ function Card(props) {
  
  <div style={{display:"flex",justifyContent:"center",alignItems:"center",gap:"20px"}}>
   <div>
-<p>price:{data.DISPLAY.USD.PRICE}</p> 
-<p>volume:{data.DISPLAY.USD.TOPTIERVOLUME24HOURTO}</p>
+<p>price:{data?.DISPLAY?.USD?.PRICE || "N/A"}</p> 
+<p>volume:{data?.DISPLAY?.USD?.TOPTIERVOLUME24HOURTO || "N/A"}</p>
 </div>
 <div>
 <button style={{backgroundColor:"red" ,borderWidth:"0",borderRadius:"5px",padding:"5px",fontSize:"17px",color:"white"}}>
-    {data.DISPLAY.USD.CHANGEPCT24HOUR}
+    {data?.DISPLAY?.USD?.CHANGEPCT24HOUR || "N/A"}
   </button>
 </div>
 </div>
@@ -62,12 +61,12 @@ function Card(props) {
  
  <div style={{display:"flex",justifyContent:"center",alignItems:"center",gap:"20px"}}>
   <div>
-<p>price:{data.DISPLAY.USD.PRICE}</p> 
-<p>volume:{data.DISPLAY.USD.TOPTIERVOLUME24HOURTO}</p>
+<p>price:{data?.DISPLAY?.USD?.PRICE || "N/A"}</p> 
+<p>volume:{data?.DISPLAY?.USD?.TOPTIERVOLUME24HOURTO || "N/A"}</p>
 </div>
 <div>
 <button style={{backgroundColor:"grey",borderWidth:"0" ,borderRadius:"5px",padding:"5px",fontSize:"17px",color:"white"}}>
-    {data.DISPLAY.USD.CHANGEPCT24HOUR}
+    {data?.DISPLAY?.USD?.CHANGEPCT24HOUR || "N/A"}
   </button>
 </div>
 </div>
@@ -81,12 +80,12 @@ function Card(props) {
  
  <div style={{display:"flex",justifyContent:"center",alignItems:"center",gap:"20px"}}>
   <div>
-<p>price:{data.DISPLAY.USD.PRICE}</p> 
-<p>volume:{data.DISPLAY.USD.TOPTIERVOLUME24HOURTO}</p>
+<p>price:{data?.DISPLAY?.USD?.PRICE || "N/A"}</p> 
+<p>volume:{data?.DISPLAY?.USD?.TOPTIERVOLUME24HOURTO || "N/A"}</p>
 </div>
 <div>
   <button style={{backgroundColor:"blue" ,borderWidth:"0",borderRadius:"5px",padding:"5px",fontSize:"17px",color:"white"}}>
-    {data.DISPLAY.USD.CHANGEPCT24HOUR}
+    {data?.DISPLAY?.USD?.CHANGEPCT24HOUR || "N/A"}
   </button>
 </div>
 </div>
@@ -108,7 +107,6 @@ function Toptrndindcryptos() {
     try {
       // Use a template literal to construct the URL
       const res = await axios.get(`${server}/${filter}`);
-      // Set the data state with the response data
       setData(res.data.data);
     } catch (error) {
       console.error(error);
@@ -177,7 +175,7 @@ function Toptrndindcryptos() {
       </div>
 
 {isDesktop?( <div className={`${styles.datacardsholderdivdisplay}`}>
-        {data.map( (element,Index)=> {
+        {data?.map( (element,Index)=> {
           return <Card filter={filtertype} key={Index} data={element} />
         })}
       </div>):( <div className={`${styles.datacardsholderdivdisplay}`}>
@@ -195,7 +193,7 @@ function Toptrndindcryptos() {
   renderThumbs={() => null} 
 
 >
-  {data.map((element, Index) => {
+  {data?.map((element, Index) => {
     return (
       <div key={Index} style={{display:"grid",placeItems:'center'}}>
         <Card filter={filtertype} data={element} />

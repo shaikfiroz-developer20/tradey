@@ -108,7 +108,7 @@ function Cryptopage() {
         const re = await axios.get(`${server}/reqcrypto?crypto=${CC}`);
         setinpresentsearchcoin(re.data);
         setPairsAvailableData(response.data);
-        if(re.data===(null || undefined || "Error")){
+        if(re.data.Response===(null || undefined || "Error")){
           setcoinexist(false)
         }
         else{
@@ -160,7 +160,7 @@ const handecanelsell=()=>{
   }
   return (
     <> <Head>
-    <title>{cryptocurrency && (`${cryptocurrency} : ${inpresentsearchcoin ?(inpresentsearchcoin?.DISPLAY[cryptocurrency]?.USD?.PRICE):("...")}`)}</title>
+    <title>{cryptocurrency && coinsexist && (`${cryptocurrency} : ${inpresentsearchcoin ?(inpresentsearchcoin?.DISPLAY[cryptocurrency]?.USD?.PRICE):("...")}`)}</title>
     <meta name="TradeY is a trading platform for crypto currencies over 110+ cryptos are available for trading" content="TradeY" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="/y.png" />
@@ -179,7 +179,7 @@ const handecanelsell=()=>{
 
 
 
-      {desktop && coinsexist && datfullloaded  && (<div>
+      {desktop  && datfullloaded && coinsexist  && (<div>
           <Homecomponentheader2 />
           <div className={styles.cryptopage}>
             <div className={styles.sidenavbarwithrelatedcrypropairsdata}>
